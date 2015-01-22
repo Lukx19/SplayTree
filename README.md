@@ -15,9 +15,9 @@ This implementation was made for educational purposes. Basic testing was made on
 
 ## Comparison to std::map test
 Test was carried out by this simple metrics.
-1.	 Program generates both trees in sizes 10, 10^2, 10^3, 10^4, 10^5, 10^6 elements
-2.	 For each size is selected range of reading. Range is slowly increasing in powers of 2 (reason: not too fast rising, HW is aligning to the powers of 2).
-3.	 For each range  is done 10 ^ 6 reedings from this range. Small repetions like 1024 cause that trees are both in the cash and results are unconsisten and undeterministic. Results depend on the fact wheather range stays in the cash or not.
+-	 Program generates both trees in sizes 10, 10^2, 10^3, 10^4, 10^5, 10^6 elements
+-	 For each size is selected range of reading. Range is slowly increasing in powers of 2 (reason: not too fast rising, HW is aligning to the powers of 2).
+-	 For each range  is done 10 ^ 6 reedings from this range. Small repetions like 1024 cause that trees are both in the cash and results are unconsisten and undeterministic. Results depend on the fact wheather range stays in the cash or not.
 
 ## Range was selected from the minimum in the tree and increasing to the maximum
 
