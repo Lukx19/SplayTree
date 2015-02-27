@@ -11,7 +11,7 @@ This implementation was made for educational purposes. Basic testing was made on
 - templated
 
 ## Missing features
-- better allocation of the tree nodes - more cash sensitive
+- better allocation of the tree nodes - more cache sensitive
 
 ## Comparison to std::map test
 Test was carried out by this simple metrics.
