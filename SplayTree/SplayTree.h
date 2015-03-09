@@ -137,7 +137,7 @@ namespace pl{
       *  Removes element with the key value key.
       *@param key key value of the elemet to remove
       */
-      void erase(const K & key){ remove(find_(key)); };
+      void erase(const K & key){ remove(find_(key)); }
       /**
       *  Removes the element at pos.
       *@param pos iterator on the element at the pos
@@ -147,13 +147,13 @@ namespace pl{
       * Outputs DOT instructions to draw whole tree.
       *@param o output streem for DOT instructions
       */
-      void get_dot(std::ostream & o){ getDOT(o); };
+      void get_dot(std::ostream & o){ getDOT(o); }
         /**
         * Removes all elements from the container. 
         * Invalidates any references, pointers, or iterators referring to contained elements. 
         * May invalidate any past-the-end iterators.
         */
-        void clear() { purgeTree(root_); };
+        void clear() { purgeTree(root_); }
         /**
         * Checks if the container has no elements.
         * @return true if container is empty
@@ -346,7 +346,7 @@ typename  SplayTree<K,V>::node* SplayTree<K, V>::subtreeMax(node * p) const // f
 
         }
         // Program is in the leaf of node
-        node_ptr n = std::make_unique<node>();
+        node_ptr n = std::unique_ptr<node>(node());//std::make_unique<node>();
         n->first = key;
         n->second = val;
         ++node_count_;
